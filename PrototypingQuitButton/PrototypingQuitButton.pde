@@ -25,8 +25,8 @@ quitButtonHeight = appHeight*1/2;
 } //End setup
 //
 void draw () {
-  if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) {
-  buttonColour= yellow;
+  if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight )
+  {buttonColour= yellow;
   } else {
   buttonColour= purple;
   }
