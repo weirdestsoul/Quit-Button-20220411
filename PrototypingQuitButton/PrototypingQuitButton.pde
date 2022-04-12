@@ -1,25 +1,23 @@
 //Global Variables
 color resetWhite=#FFFFFF;
 int appHeight, appWidth;
-
 //
 void setup() {
   fullScreen();
   displayOrientation();
   population();
 } //End setup
-
 //
 void draw () {
   quitButtonDraw();
 }//End draw
 //
 void keyPressed () {
-//if ( key=='e' || key=='E') exit();
+  quitButtonkeyPressed();
 }//End keyPressed
 //
 void mousePressed () {
-  if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) exit();
+ quitButtonmousePressed();
 }//End mousePressed
 //
 //End Main Program

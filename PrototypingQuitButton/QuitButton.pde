@@ -24,3 +24,12 @@ if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButt
   rect(quitButtonX,quitButtonY,quitButtonWidth,quitButtonHeight);
   fill(resetWhite);
 }//End quitButtonDraw
+
+void quitButtonkeyPressed() {
+if ( key=='Q' || key=='q') exit();
+}//End quitButtonkeypressed
+
+
+void quitButtonmousePressed() {
+   if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) exit();
+}//End quitButtonmousePressed
